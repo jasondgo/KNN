@@ -22,8 +22,8 @@ class FileRead:
        
        dataHolder = [];
        for line in self.holder:
-           lineList = line.split(",");
+           lineList = line.strip().split(",");
            print(lineList);
-           #dataHolder.append( DataPoint( lineList[0], lineList[1], lineList[2], lineList[3], lineList[4] ));  
+           dataHolder.append( DataPoint( float(lineList[0]), float(lineList[1]), float(lineList[2]), float(lineList[3]), lineList[4] ));  
            
        return dataHolder;

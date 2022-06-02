@@ -9,4 +9,4 @@ class DataPoint:
     plPosition: float; # petal length
     pwPosition: float; # petal width
     flowerActual: str; # actual type
-    flowerAssoc: str = " ";  # centroid closest type
+    flowerAssoc: str = " ";  # 
